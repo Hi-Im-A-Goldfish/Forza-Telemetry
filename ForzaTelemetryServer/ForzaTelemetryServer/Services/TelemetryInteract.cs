@@ -1,13 +1,19 @@
 ﻿using ForzaDataManager;
 using ForzaTelemetryServer.Objects;
 using ForzaTelemetryServer.Objects.TelemetryResponses;
+using ForzaTelemetryServer.WebSocket;
 using Mapster;
+using Microsoft.AspNetCore.SignalR;
 using System.Numerics;
 
 namespace ForzaTelemetryServer.Services
 {
     public class TelemetryInteract : BackgroundService
-    {public DataManager TelemetryManager = new();
+    {
+        private readonly IHubContext<TelemetryHub> HubContext;
+        public TelemetryInteract(IHubContext<TelemetryHub> hubContext) { HubContext = hubContext; }
+
+        public DataManager TelemetryManager = new();
 
         private GForceReturn GetGForce()
         {
@@ -36,9 +42,9 @@ namespace ForzaTelemetryServer.Services
                 response.GForceValue = GetGForce().Value;
                 response.GForceVector = GetGForce().Accel;
 
-                Console.WriteLine(response.ToString());
+                await HubContext.Clients.All.SendAsync("LiveFeedSend", response);
 
-                await Task.Delay(20, stoppingToken);
+                await Task.Delay(100, stoppingToken);
             }
         }
     }

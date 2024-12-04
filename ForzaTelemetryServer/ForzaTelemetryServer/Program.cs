@@ -10,12 +10,30 @@ namespace ForzaTelemetryServer
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Configuration
+                    .SetBasePath(builder.Environment.ContentRootPath)
+                    .AddJsonFile("appsettings.json", true, true)
+                    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", true, true)
+                    .AddEnvironmentVariables();
+
+            builder.Services.AddCors();
+
             builder.Services.AddSignalR();
             builder.Services.AddHostedService<TelemetryInteract>();
 
             var app = builder.Build();
 
             WebSocketOptions webSocketOpts = new() { KeepAliveInterval = TimeSpan.FromMinutes(5) };
+
+            app.UseCors(options =>
+            {
+                options.AllowAnyHeader();
+                options.AllowAnyMethod();
+                options.SetIsOriginAllowed(_ => true);
+                options.AllowCredentials();
+            });
+
+            app.UseAuthorization();
 
             app.UseWebSockets(webSocketOpts);
 
