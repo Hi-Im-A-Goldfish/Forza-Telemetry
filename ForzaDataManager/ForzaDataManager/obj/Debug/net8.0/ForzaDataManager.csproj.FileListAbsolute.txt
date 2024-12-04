@@ -1,0 +1,12 @@
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\bin\Debug\net8.0\ForzaDataManager.deps.json
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\bin\Debug\net8.0\ForzaDataManager.dll
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\bin\Debug\net8.0\ForzaDataManager.pdb
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.csproj.AssemblyReference.cache
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.AssemblyInfoInputs.cache
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.AssemblyInfo.cs
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.csproj.CoreCompileInputs.cache
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.dll
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\refint\ForzaDataManager.dll
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ForzaDataManager.pdb
+C:\Users\tobyb\source\repos\ForzaDataManager\ForzaDataManager\obj\Debug\net8.0\ref\ForzaDataManager.dll
