@@ -7,8 +7,7 @@ using System.Numerics;
 namespace ForzaTelemetryServer.Services
 {
     public class TelemetryInteract : BackgroundService
-    {
-        private DataManager TelemetryManager = new();
+    {public DataManager TelemetryManager = new();
 
         private GForceReturn GetGForce()
         {
@@ -26,7 +25,6 @@ namespace ForzaTelemetryServer.Services
 
             return _return;
         }
-
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

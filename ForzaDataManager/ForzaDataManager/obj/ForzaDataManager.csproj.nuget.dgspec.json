@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj": {}
+    "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj": {
+    "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj": {
       "version": "0.0.3",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj",
+        "projectUniqueName": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj",
         "projectName": "ForzaDataManager",
-        "projectPath": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj",
+        "projectPath": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\ForzaDataManager.csproj",
         "packagesPath": "C:\\Users\\tobyb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\obj\\",
+        "outputPath": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

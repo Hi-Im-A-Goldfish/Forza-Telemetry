@@ -1,3 +1,4 @@
+using ForzaDataManager;
 using ForzaTelemetryServer.Services;
 using ForzaTelemetryServer.WebSocket;
 
@@ -13,6 +14,10 @@ namespace ForzaTelemetryServer
             builder.Services.AddHostedService<TelemetryInteract>();
 
             var app = builder.Build();
+
+            WebSocketOptions webSocketOpts = new() { KeepAliveInterval = TimeSpan.FromMinutes(5) };
+
+            app.UseWebSockets(webSocketOpts);
 
             app.MapGet("/", () => "Forza Telemetry Server");
             app.MapHub<TelemetryHub>("/forza/temetry/ws");

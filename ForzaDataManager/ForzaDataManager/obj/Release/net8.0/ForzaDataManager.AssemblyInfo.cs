@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Toby Blanchard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3+ea06a373e0c31e10a5c232206f5b54b4d15ba02f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ForzaDataManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ForzaDataManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]

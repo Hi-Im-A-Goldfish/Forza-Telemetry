@@ -631,11 +631,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tobyb\\source\\repos\\ForzaTelemetryServer\\ForzaTelemetryServer\\ForzaTelemetryServer.csproj",
+      "projectUniqueName": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaTelemetryServer\\ForzaTelemetryServer\\ForzaTelemetryServer.csproj",
       "projectName": "ForzaTelemetryServer",
-      "projectPath": "C:\\Users\\tobyb\\source\\repos\\ForzaTelemetryServer\\ForzaTelemetryServer\\ForzaTelemetryServer.csproj",
+      "projectPath": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaTelemetryServer\\ForzaTelemetryServer\\ForzaTelemetryServer.csproj",
       "packagesPath": "C:\\Users\\tobyb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tobyb\\source\\repos\\ForzaTelemetryServer\\ForzaTelemetryServer\\obj\\",
+      "outputPath": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaTelemetryServer\\ForzaTelemetryServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
