@@ -11,7 +11,7 @@ namespace ForzaTelemetryServer.Objects.TelemetryResponses
         public bool IsRaceOn { get; set; }
         public float EngineMaxRpm { get => (float)_EngineMaxRpm; set => _EngineMaxRpm = Math.Ceiling(value); }
         public float CurrentEngineRpm { get => (float)_CurrentEngineRpm; set => _CurrentEngineRpm = Math.Floor(value); }
-        public Vector2 GForceVector { get; set; }
+        public Vector2D GForceVector { get; set; }
         public double GForceValue { get; set; }
         public float Speed { get; set; }
         public float Power { get => _Power; set => _Power = value > 0 ? (value / 745.7f) : 0; }

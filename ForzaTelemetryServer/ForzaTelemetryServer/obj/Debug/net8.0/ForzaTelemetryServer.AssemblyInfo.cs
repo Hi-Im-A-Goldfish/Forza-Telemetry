@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ForzaTelemetryServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10a0acac3f2c1fb82e7b96d1aa4a928b84ac3133")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d452e20d50bd6ec8ba7f0b942cf0195fcd84914a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ForzaTelemetryServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ForzaTelemetryServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

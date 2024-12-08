@@ -25,7 +25,7 @@ namespace ForzaTelemetryServer.Services
 
             GForceReturn _return = new()
             {
-                Accel = Accel,
+                Accel = Accel.Adapt<Vector2D>().ReturnAsGravity(),
                 Value = Accel.Length() / 9.8
             };
 
@@ -39,12 +39,17 @@ namespace ForzaTelemetryServer.Services
             while (!stoppingToken.IsCancellationRequested)
             {
                 LiveFeedResponse response = TelemetryManager.Data.Adapt<LiveFeedResponse>();
-                response.GForceValue = GetGForce().Value;
-                response.GForceVector = GetGForce().Accel;
+                
+                GForceReturn GForce = GetGForce();
+                response.GForceValue = GForce.Value;
+                response.GForceVector = GForce.Accel;
 
-                await HubContext.Clients.All.SendAsync("LiveFeedSend", response);
+                if (response.IsRaceOn)
+                {
+                    await HubContext.Clients.All.SendAsync("LiveFeedSend", response);
+                }
 
-                await Task.Delay(100, stoppingToken);
+                await Task.Delay(50, stoppingToken);
             }
         }
     }

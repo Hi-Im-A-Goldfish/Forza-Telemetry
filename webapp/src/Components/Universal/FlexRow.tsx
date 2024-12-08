@@ -1,13 +1,15 @@
-import {ReactNode} from "react";
+import {CSSProperties, ReactNode} from "react";
 
 interface IFlexRow {
-    children: ReactNode
+    children: ReactNode,
+    className?: string,
+    style?: CSSProperties
 }
 
-export default function FlexRow({children}: IFlexRow) {
+export default function FlexRow({children, className, style}: IFlexRow) {
     return (
         <>
-            <div className="d-flex">
+            <div className={`d-flex ${className}`} style={style}>
                 {children}
             </div>
         </>

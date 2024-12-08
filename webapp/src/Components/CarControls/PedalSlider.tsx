@@ -7,12 +7,12 @@ interface IPedalSlider {
 export default function PedalSlider({Colour, Value, Title}: IPedalSlider) {
     return (
         <>
-            <div>
-                <h4>{Title}</h4>
-                <div className="border position-relative" style={{height: '100px', width: '30px'}}>
+            <div className="mx-4">
+                <div className="mx-auto border position-relative" style={{height: '4rem', width: '2rem'}}>
                     <div className="position-absolute bottom-0 w-100"
                          style={{backgroundColor: Colour, height: `${(Value / 255) * 100}%`}}/>
                 </div>
+                <h4>{Title}</h4>
             </div>
         </>
     );

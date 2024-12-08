@@ -5,6 +5,6 @@ namespace ForzaTelemetryServer.Objects
     public class GForceReturn
     {
         public double Value { get; set; } = 0;
-        public Vector2 Accel {  get; set; } = new();
+        public Vector2D Accel {  get; set; } = new();
     }
 }

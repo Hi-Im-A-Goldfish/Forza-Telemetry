@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\",
+  "WorkspaceRootPath": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\source\\repos\\forzadatamanager\\forzadatamanager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\documents\\forzatelemetry\\forzadatamanager\\forzadatamanager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|solutionrelative:forzadatamanager\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\source\\repos\\forzadatamanager\\forzadatamanager\\packetparse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\documents\\forzatelemetry\\forzadatamanager\\forzadatamanager\\packetparse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|solutionrelative:forzadatamanager\\packetparse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\source\\repos\\forzadatamanager\\forzadatamanager\\fmdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\documents\\forzatelemetry\\forzadatamanager\\forzadatamanager\\fmdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|solutionrelative:forzadatamanager\\fmdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\source\\repos\\forzadatamanager\\forzadatamanager\\datapacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|c:\\users\\tobyb\\documents\\forzatelemetry\\forzadatamanager\\forzadatamanager\\datapacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D5DD855-BE0B-40CF-90C8-0978DD8C96E6}|ForzaDataManager\\ForzaDataManager.csproj|solutionrelative:forzadatamanager\\datapacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,48 +32,45 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PacketParse.cs",
-              "DocumentMoniker": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\PacketParse.cs",
+              "DocumentMoniker": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\PacketParse.cs",
               "RelativeDocumentMoniker": "ForzaDataManager\\PacketParse.cs",
-              "ToolTip": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\PacketParse.cs",
+              "ToolTip": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\PacketParse.cs",
               "RelativeToolTip": "ForzaDataManager\\PacketParse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:32:01.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T19:32:01.682Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FMData.cs",
-              "DocumentMoniker": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\FMData.cs",
+              "DocumentMoniker": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\FMData.cs",
               "RelativeDocumentMoniker": "ForzaDataManager\\FMData.cs",
-              "ToolTip": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\FMData.cs",
+              "ToolTip": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\FMData.cs",
               "RelativeToolTip": "ForzaDataManager\\FMData.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:31:13.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T19:31:13.913Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "DataPacket.cs",
-              "DocumentMoniker": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\DataPacket.cs",
+              "DocumentMoniker": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\DataPacket.cs",
               "RelativeDocumentMoniker": "ForzaDataManager\\DataPacket.cs",
-              "ToolTip": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\DataPacket.cs",
+              "ToolTip": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\DataPacket.cs",
               "RelativeToolTip": "ForzaDataManager\\DataPacket.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAF4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T20:18:02.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-03T20:18:02.89Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DataManager.cs",
-              "DocumentMoniker": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\DataManager.cs",
+              "DocumentMoniker": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\DataManager.cs",
               "RelativeDocumentMoniker": "ForzaDataManager\\DataManager.cs",
-              "ToolTip": "C:\\Users\\tobyb\\source\\repos\\ForzaDataManager\\ForzaDataManager\\DataManager.cs",
+              "ToolTip": "C:\\Users\\tobyb\\Documents\\ForzaTelemetry\\ForzaDataManager\\ForzaDataManager\\DataManager.cs",
               "RelativeToolTip": "ForzaDataManager\\DataManager.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
