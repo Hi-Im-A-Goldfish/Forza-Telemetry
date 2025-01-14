@@ -22,6 +22,10 @@ export default function GMeter({ VectorValue, AccelValue, MaxG = 4 }: IGmeter) {
                     <div className="GMeterLineH" />
                     <div className="GMeterLineV" />
                     <div className="GMeterDot translate-middle" style={{ top: GetNormalisedG(VectorValue.y), left: GetNormalisedG(VectorValue.x) }}></div>
+                    <p className="mb-0 position-absolute top-50 translate-middle-y end-0">{MaxG}</p>
+                    <p className="mb-0 position-absolute top-50 translate-middle-y start-0">{-MaxG}</p>
+                    <p className="mb-0 position-absolute top-0 translate-middle-x start-50">{MaxG}</p>
+                    <p className="mb-0 position-absolute bottom-0 translate-middle-x start-50">{-MaxG}</p>
                 </div>
                 <h4 className="text-center">{AccelValue?.toFixed(2)}G</h4>
             </div>

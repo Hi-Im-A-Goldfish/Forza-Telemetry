@@ -7,18 +7,22 @@ interface IRevCount {
 }
 
 export default function RevCount({ Rpm, MaxRpm }: IRevCount) {
+    const [RedLine, setRedLine] = useState(4000);
+
     function GetRevCountTop() {
+        if (Rpm > RedLine) { setRedLine(Rpm); }
+
         return (Math.ceil(MaxRpm / 1000) * 1000) + 1000;
     }
 
     function GenerateLimitColour() {
-        if (Rpm >= MaxRpm - 200) {
+        if (Rpm >= RedLine - 200) {
             return "#ff0000";
         }
-        if (Rpm >= MaxRpm - 400) {
+        if (Rpm >= RedLine - 400) {
             return "#ff5900";
         }
-        if (Rpm >= MaxRpm - 600) {
+        if (Rpm >= RedLine - 600) {
             return "#ffa200";
         } else {
             return "#ffffff";
@@ -36,7 +40,7 @@ export default function RevCount({ Rpm, MaxRpm }: IRevCount) {
                         }} />
                     <div className="position-absolute end-0 h-100" style={{
                         backgroundColor: GenerateLimitColour(),
-                        width: `${((GetRevCountTop() - MaxRpm) / GetRevCountTop()) * 100}%`
+                        width: `${((GetRevCountTop() - RedLine) / GetRevCountTop()) * 100}%`
                     }} />
                 </div>
                 <div style={{ width: '20rem' }}>
