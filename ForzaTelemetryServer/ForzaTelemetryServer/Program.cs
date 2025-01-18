@@ -24,7 +24,6 @@ namespace ForzaTelemetryServer
             {
                 o.EnableDetailedErrors = true;
             });
-            builder.Services.AddHostedService<TelemetryInteract>();
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -32,6 +31,8 @@ namespace ForzaTelemetryServer
             {
                 options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
             });
+
+            builder.Services.AddHostedService<TelemetryInteract>();
 
             var app = builder.Build();
 

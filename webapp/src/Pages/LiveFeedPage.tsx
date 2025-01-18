@@ -10,17 +10,28 @@ import { URLS } from "../Consts/URLS";
 
 export default function LiveFeedPage() {
     const [liveFeed, setLiveFeed] = useState<LiveFeedResponse>();
-    const { Connection, StartTracking } = useContext(WSContext);
+    const { Connection, StartTracking, EndTracking } = useContext(WSContext);
+
+    const [tracking, setTracking] = useState(false);
 
     Connection.on("LiveFeedSend", (response: LiveFeedResponse) => setLiveFeed(response));
 
-    function HandleTrackingStart(){
+    function HandleTrackingStart() {
         StartTracking(Connection);
+
+        setTracking(true);
+    }
+
+    function HandleTrackingEnd() {
+        EndTracking(Connection);
+
+        setTracking(false)
     }
 
     return (
         <>
-            <button onClick={HandleTrackingStart}>START TRACKING</button>
+            {!tracking && <button className="btn btn-primary" onClick={HandleTrackingStart} >START TRACKING</button>}
+            {tracking && <button className="btn btn-primary" onClick={HandleTrackingEnd} >END TRACKING</button>}
 
             <LiveFeedContext.Provider value={{ liveFeed }}>
                 <CentralContainer>

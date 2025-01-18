@@ -17,6 +17,7 @@ export default class WebSocketHelper {
     async Start() {
         try {
             this.Connection.on("Started Tracking", () => console.log("Started Tracking"))
+            this.Connection.on("Ended Tracking", () => console.log("Ended Tracking"))
 
             await this.Connection.start();
             console.log("Starting websocket server...");
@@ -25,8 +26,15 @@ export default class WebSocketHelper {
 
     async StartTracking(Connection: HubConnection) {
         try {
-            await Connection.invoke("startTracking").catch(err => console.error(err));
+            await Connection.invoke("startTracking");
             console.log("Starting telemetry tracking...");
-        } catch (err) { }
+        } catch (err) { console.error(err); }
+    }
+
+    async EndTracking(Connection: HubConnection) {
+        try {
+            await Connection.invoke("endTracking");
+            console.log("Ending telemetry tracking...");
+        } catch (err) { console.error(err); }
     }
 }

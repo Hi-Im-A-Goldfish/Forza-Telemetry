@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using ForzaTelemetryServer.Services;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ForzaTelemetryServer.WebSocket
 {
@@ -11,9 +12,17 @@ namespace ForzaTelemetryServer.WebSocket
 
         public async Task StartTracking()
         {
-            Console.WriteLine("Tracking");
-            //InteractVars.Tracking = true;
+            InteractVars.Tracking = true;
+            InteractVars.TrackedSaved = false;
+
             await Clients.Caller.SendAsync("Started Tracking");
+        }
+
+        public async Task EndTracking()
+        {
+            InteractVars.Tracking = false;
+
+            await Clients.Caller.SendAsync("Ended Tracking");
         }
     }
 }
