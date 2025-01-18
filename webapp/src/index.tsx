@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './Styles/index.css';
-import reportWebVitals from './reportWebVitals';
 import Routing from "./Components/Routing";
+import './Styles/index.css';
 import WebSocketHelper from "./Utils/WebSocketHelper";
+import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -15,7 +15,7 @@ WS.Start();
 
 root.render(
     <React.StrictMode>
-        <Routing WS={WS}/>
+        <Routing WS={WS} />
     </React.StrictMode>
 );
 

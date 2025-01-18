@@ -8,8 +8,8 @@ namespace ForzaTelemetryServer.WebSocket
         {
             await Clients.Caller.SendAsync("Recieved Init Connection");
         }
-        [HubMethodName("StartTracking")]
-        public async Task StartTracking(string message)
+
+        public async Task StartTracking()
         {
             Console.WriteLine("Tracking");
             //InteractVars.Tracking = true;

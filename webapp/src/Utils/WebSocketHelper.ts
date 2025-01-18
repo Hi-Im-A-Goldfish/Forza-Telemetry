@@ -1,5 +1,5 @@
-import {HubConnection, HubConnectionBuilder, LogLevel} from "@microsoft/signalr";
-import {URLS} from "../Consts/URLS";
+import { HubConnection, HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
+import { URLS } from "../Consts/URLS";
 
 export default class WebSocketHelper {
     Connection: HubConnection;
@@ -14,19 +14,19 @@ export default class WebSocketHelper {
         this.Connection.onclose(async () => await this.Start())
     }
 
-    async Start(){
-        try{
+    async Start() {
+        try {
             this.Connection.on("Started Tracking", () => console.log("Started Tracking"))
 
             await this.Connection.start();
             console.log("Starting websocket server...");
-        } catch(err){ setTimeout(this.Start, 5000);}
+        } catch (err) { setTimeout(this.Start, 5000); }
     }
 
-    async StartTracking(Connection: HubConnection){
-        try{
-            await Connection.invoke("StartTracking", "Start");
+    async StartTracking(Connection: HubConnection) {
+        try {
+            await Connection.invoke("startTracking").catch(err => console.error(err));
             console.log("Starting telemetry tracking...");
-        } catch(err){ console.error(err);}
+        } catch (err) { }
     }
 }

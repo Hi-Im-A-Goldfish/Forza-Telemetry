@@ -35,8 +35,6 @@ namespace ForzaTelemetryServer
 
             var app = builder.Build();
 
-            WebSocketOptions webSocketOpts = new() { KeepAliveInterval = TimeSpan.FromMinutes(5) };
-
             app.UseCors(options =>
             {
                 options.AllowAnyHeader();
@@ -46,8 +44,6 @@ namespace ForzaTelemetryServer
             });
 
             app.UseAuthorization();
-
-            app.UseWebSockets(webSocketOpts);
 
             app.MapGet("/", () => "Forza Telemetry Server");
             app.MapHub<TelemetryHub>("/forza/telemetry/ws");
